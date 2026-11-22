@@ -7,6 +7,13 @@
  * thing: it checks the bundled file is a legal entry image and publishes
  * it, byte for byte, as /output/entry.png.
  *
+ * Revised entry (2026-11-22 refresh): the image now covers the final
+ * Saturday news — Iran's evening strike on US bases in Bahrain, Mexico's
+ * capture of FBI most-wanted cartel boss "El Chapo Isidro", and the
+ * confirmed Kryvyi Rih toll — which the first submitted version missed.
+ * The drawing code for the revision lives in tools/gen_revised.py next to
+ * the original generator; the layout is the same panel grid.
+ *
  * Checks performed before anything is written:
  *   - the PNG magic bytes are present,
  *   - the first chunk is IHDR and its dimensions are within 1024x1024,

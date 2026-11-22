@@ -13,7 +13,8 @@ The day's main stories, in one 1024×1024 panel grid:
 1. **Russia strikes Kyiv again on Saturday** — missiles hit Kyiv early on Saturday,
    setting homes ablaze in the Podil district, a day after the year's biggest barrage:
    more than 400 drones and 110 missiles, eight people killed, three bridges over the
-   Dnipro hit, and Russian missiles falling inside Poland.
+   Dnipro hit, and Russian missiles falling inside Poland. Saturday also confirmed the
+   toll from Friday night's strike on Kryvyi Rih: two killed, 60 hurt.
 2. **AI sell-off pushes US stocks into correction** — the S&P 500 falls 3.7% and the Dow
    1.9%, while the Nasdaq drops 5.3% and wipes out all of its 2026 gains. Anthropic
    shares slide for a second day; the SEC is reported to be probing Nvidia's accounting.
@@ -30,17 +31,21 @@ The day's main stories, in one 1024×1024 panel grid:
 6. **UK and EU seal the biggest reset since Brexit** — at a Brussels summit, Britain and
    the EU agree to scrap most food and farm checks, link their carbon markets, and open a
    youth mobility scheme for 100,000 people a year aged 18 to 31 on each side.
-7. **Magnitude 6.7 quake shakes Peru** — a 6.7-magnitude earthquake strikes near Junín in
-   central Peru, felt in Lima, where residents rush into the streets. No casualties or
-   serious damage are reported.
+7. **Iran strikes US bases in Bahrain** — Iran says it hit US positions at al-Riffa
+   and Awali with missiles and drones on Saturday evening. Bahrain confirms an attack
+   and a fire at an industrial site; no injuries are reported.
 
-Also noted: Saudi Arabia intercepts three Houthi missiles aimed at Riyadh for a third
+Also noted: Mexico captures FBI most-wanted cartel boss "El Chapo Isidro" (11 killed),
+Saudi Arabia intercepts three Houthi missiles aimed at Riyadh for a third
 night, and a storm in Brazil kills three and wrecks about 5,000 homes.
 
 ## How it was built
 
 Ten candidate layouts were drawn programmatically (Python/PIL) from a verified news
-slate and scored on the five judging criteria; the winner is `entry.png`.
+slate and scored on the five judging criteria; the winner is `entry.png`. A refresh
+on the evening of November 22 added the final Saturday news — the Bahrain strike,
+the Mexico capture and the confirmed Kryvyi Rih toll — and the revised image scored
+49/50 against the first version's 47/50, so the entry was resubmitted with it.
 `main.ts` (Node 22, standard library only) validates the PNG — magic bytes, IHDR
 dimensions, the 1 MiB cap, and every chunk's CRC — and publishes it to `/output/entry.png`.
 
